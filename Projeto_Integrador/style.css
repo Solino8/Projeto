@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif; /* Corrigido 'sans-seif' para 'sans-serif' */
+}
+
+body {
+  background-image: url(https://i.imgur.com/Z8OOnZB.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container1, .container2 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
+}
+
+.card1 {
+  color: #0C2D34;
+  font-size: 40px;
+  background-color: #ffffff;
+  box-shadow: 6px 6px 2px 2px #000000;
+}
+
+.card2 {
+  color: #0C2D34;
+  background-color: #ffffff90;
+  padding: 30px;
+  box-shadow: 3px 3px 2px 0px #000000;
+  border-radius: 3%;
+  width: 400px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #0C2D34;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 2px solid #0C2D34;
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all .3s ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+/* Removido código duplicado e corrigido propriedades incorretas */
+.label-float label {
+  color: #0C2D34;
+  pointer-events: none; /* Corrigido 'pointer event' para 'pointer-events' */
+  position: absolute; /* Corrigido 'positioin' para 'position' */
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all .3s ease-out;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #0C2D34;
+}
+
+.label-float input:focus + label,
+.label-float input:valid + label { /* Adicionado espaço entre '+' e 'label' */
+  font-size: 13px; /* Corrigido '13ps' para '13px' */
+  margin-top: 0;
+  color: #0C2D34;
+}
+
+button {
+  background-color: transparent;
+  border-color: #0C2D34;
+  color: #0C2D34;
+  padding: 7px;
+  font-weight: bold;
+  font-size: 12pt;
+  margin-top: 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+button:hover {
+  background-color: #0C2D34;
+  color: #fff;
+  transition: all .3s ease-out;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
